@@ -103,6 +103,8 @@ let staff = [{ id: 1, name: 'Jon' }, { id: 2, name: 'Yuli' }, { id: 21, name: 'P
 
 function findById(id) {
 
+
+
 }
 
 
@@ -129,4 +131,6 @@ let theBand = {
 }
 
 function bandMemberDetails(name) {
+let member = theBand.members.find(x => x.name == name)
+return member.name + ' ' + "is in the band and plays the" + ' ' +  member.instrument
 }
