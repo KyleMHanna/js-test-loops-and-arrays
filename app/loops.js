@@ -38,5 +38,14 @@ return sum
 // output: 2
 
 function rangeDivisor(start, end, divisor) {
-
+    let sum = 0 
+    for(let i = start; i<=end; i++)
+    {
+    sumNumbers = i 
+    if (sumNumbers%divisor == 0)
+    {
+        sum += 1
+    }
+    }
+    return sum
 }
